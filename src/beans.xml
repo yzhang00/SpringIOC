@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "sim" class = "IOC.Vodaphone"></bean>
+
+<bean id = "student" class = "IOC.Student">
+	<property name="studentName" value="John yeahhh"></property>
+	<property name="id" value="5"></property>
+	<property name="mathCheat">
+	<bean class = "IOC.MathCheat"></bean>
+	</property>
+</bean>
+
+<bean id = "chicken" class = "IOC.Chicken">
+	<constructor-arg name="name" value="John yeahhh"></constructor-arg>
+	<constructor-arg name="id" value="5"></constructor-arg>
+</bean>
+</beans>
